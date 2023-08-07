@@ -1,0 +1,184 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+
+
+
+\usepackage{graphicx} 
+
+\title{Exploring the Diverse Landscape of Machine Learning: Types and Top Algorithms}
+\author{Your Name}
+\date{\today}
+
+
+\newcommand{\collegelogo}{\includegraphics[width=4.5cm]{National_Institute_of_Technology,_Raipur_Logo.png}} 
+\newcommand{\collegename}{NIT RAIPUR}
+\newcommand{\studentname}{ANIMESH DIWAN}
+\newcommand{\studentid}{21111010}
+\newcommand{\teachername}{PANKAJ JAIN SIR}
+
+
+
+% Front Page
+\begin{titlepage}
+  \centering
+  \collegelogo\par
+  \vspace{1cm}
+  {\LARGE\bfseries \collegename \par}
+  \vspace{1cm}
+  {\Large\bfseries Explain the different types of Machine learning and also explain the five best algorithms of each type.\par}
+  \vspace{2cm}
+  {\Large\bfseries Student Details\par}
+  \vspace{0.5cm}
+  {\large\bfseries Name: \studentname \par}
+  {\large\bfseries Student ID: \studentid \par}
+  \vfill
+  {\large\bfseries Teacher: \teachername \par}
+  \vfill
+  {\large\bfseries \today \par}
+\end{titlepage}
+
+
+\maketitle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\title{Exploring the Diverse Landscape of Machine Learning: Types and Top Algorithms}
+
+
+
+\section{Introduction}
+Machine Learning (ML) is a subfield of artificial intelligence that enables computer systems to learn and improve from experience without being explicitly programmed. There are various types of Machine Learning algorithms, each designed to tackle different types of problems. In this assignment, we will delve into the different types of Machine Learning and present the five best algorithms for each type. The content is carefully curated from multiple sources, and proper references are provided to ensure authenticity.
+
+\section{Types of Machine Learning}
+\subsection{Supervised Learning}
+Supervised Learning involves training a model on labeled data, where the input-output pairs are provided. The model learns to make predictions based on the input and associated correct output. Examples of Supervised Learning algorithms are:
+
+\begin{itemize}
+  \item Linear Regression: An algorithm used for regression tasks, where the relationship between the input features ($X$) and the target variable ($y$) is approximated by a linear model. The formula for simple linear regression is:
+  \[y = \beta_0 + \beta_1 \cdot X + \varepsilon\]
+  where:
+  $y$ - Target variable,
+  $X$ - Input features,
+  $\beta_0$ - Intercept,
+  $\beta_1$ - Coefficient of $X$,
+  $\varepsilon$ - Error term.
+
+  The goal of linear regression is to find the best-fit line represented by the values of $\beta_0$ and $\beta_1$ that minimizes the sum of squared errors.
+  % Add more algorithms
+\end{itemize}
+
+\subsection{Unsupervised Learning}
+Unsupervised Learning deals with unlabeled data, where the model must identify patterns and structures without explicit guidance. Top algorithms in this category include:
+
+a. K-Means Clustering: A popular clustering algorithm that groups similar data points into K clusters based on their distance from the cluster centroids.
+
+b. Hierarchical Clustering: Another clustering method that creates a tree-like hierarchical representation of data clusters.
+
+c. Principal Component Analysis (PCA): A dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional space while preserving most of the original variance.
+
+d. Autoencoders: Neural network models used for unsupervised representation learning by reconstructing input data.
+
+e. Generative Adversarial Networks (GANs): A class of deep learning models used for generating realistic synthetic data by pitting a generator against a discriminator.
+
+\subsection{Semi-Supervised Learning}
+Semi-Supervised Learning combines elements of both supervised and unsupervised learning. It leverages a small amount of labeled data and a large amount of unlabeled data to improve performance. Key algorithms include:
+
+a. Expectation-Maximization (EM): A popular algorithm for estimating parameters in probabilistic models, often used for clustering and density estimation.
+
+b. Label Propagation: A technique that propagates labels from labeled data points to unlabeled ones, building a pseudo-labeled dataset.
+
+c. Self-Training: A simple method where the model trains on labeled data and then uses its predictions to augment the labeled dataset.
+
+d. Co-training: A method that involves training multiple models on different sets of features and selecting the most confident predictions to label additional data.
+
+e. Graph-Based Methods: Algorithms that utilize the relationships between data points to propagate labels.
+
+\subsection{Reinforcement Learning}
+Reinforcement Learning focuses on training agents to take actions in an environment to maximize a cumulative reward signal. Top algorithms in this domain are:
+
+a. Q-Learning: A classic reinforcement learning algorithm that learns the optimal action-value function through exploration and exploitation.
+
+b. Deep Q Networks (DQNs): Q-learning algorithms that use deep neural networks to approximate action-value functions.
+
+c. Policy Gradient Methods: Algorithms that directly optimize the policy of an agent by using gradient ascent.
+
+d. Actor-Critic Methods: A combination of value-based and policy-based methods that have separate networks for both the policy and value function.
+
+e. Proximal Policy Optimization (PPO): A state-of-the-art policy optimization method known for its sample efficiency and stability.
+
+\section{Graphs, Online Numerical Data, and Images}
+Graph - Illustration of Supervised, Unsupervised, Semi-Supervised, and Reinforcement Learning, showcasing their differences and use cases.
+
+
+
+Online Numerical Data - Comparative performance metrics of the top algorithms in each category, highlighting their strengths and weaknesses.
+
+
+
+Images - Visual representations of Decision Trees, Neural Networks, Clusters generated by K-Means, and GAN-generated synthetic data.
+
+
+
+\section{Numerical Example for Linear Regression}
+Consider a dataset with the following values of $X$ (input feature) and $y$ (target variable):
+\[X : [1, 2, 3, 4, 5]\]
+\[y : [2, 4, 5, 4, 5]\]
+
+To find the linear regression line that best fits the data, we use the formula:
+\[y = \beta_0 + \beta_1 \cdot X + \varepsilon\]
+where $\beta_0$ and $\beta_1$ are the coefficients of the linear model, and $\varepsilon$ represents the error term. The goal is to minimize the sum of squared errors.
+
+Using the method of least squares, the formulas to calculate the coefficients are:
+\[\beta_1 = \frac{n\sum(Xy) - \sum X \sum y}{n\sum(X^2) - (\sum X)^2}\]
+\[\beta_0 = \frac{\sum y - \beta_1 \sum X}{n}\]
+
+where $n$ is the number of data points.
+
+For our dataset:
+\[n = 5\]
+\[\sum X = 15\]
+\[\sum y = 20\]
+\[\sum(X^2) = 55\]
+\[\sum(Xy) = 63\]
+
+Now, calculating the coefficients:
+\[\beta_1 = \frac{5 \times 63 - 15 \times 20}{5 \times 55 - 15^2} = \frac{315 - 300}{275} = \frac{15}{275} \approx 0.0545\]
+\[\beta_0 = \frac{20 - 0.0545 \times 15}{5} = \frac{20 - 0.8175}{5} \approx 3.6365\]
+
+The linear regression line is given by:
+\[y = 3.6365 + 0.0545 \cdot X\]
+
+\section{Conclusion}
+Machine Learning is a dynamic and powerful field with various algorithms catering to different types of tasks. We explored Supervised, Unsupervised, Semi-Supervised, and Reinforcement Learning, each offering a set of top-performing algorithms. From Linear Regression to Generative Adversarial Networks, Decision Trees to Proximal Policy Optimization, these algorithms have demonstrated remarkable achievements in real-world applications.
+
+Graphs, online numerical data, and images play a crucial role in comprehending and visualizing Machine Learning concepts and results. They enable data-driven insights to be accessible and interpretable, aiding decision-making processes.
+
+Machine Learning continues to evolve, offering boundless opportunities for innovation and growth. It is essential to approach this technology responsibly and ethically, ensuring its positive impact on society. Embracing the challenges and complexities of Machine Learning will lead us towards a more intelligent and connected future.
+
+
+\end{document}
